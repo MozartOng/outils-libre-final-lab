@@ -1,0 +1,29 @@
+// build.gradle
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.lab'
+version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.lab.pricing.App'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "failed", "skipped"
+        showStandardStreams = true
+    }
+}
