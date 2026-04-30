@@ -12,7 +12,7 @@ Students start from a badly designed Java class and progressively improve it.
 
 ## Project Overview
 
-Build a **pricing engine** that calculates the final price of an order.
+Build a **pricing engine** that calculates the final price of an order. 
 
 ### Inputs
 - List of item prices
